@@ -5,7 +5,7 @@ import os
 
 class Tplink:
 
-    def __init__(self, chromedriverpath, backupfilepath, ip, pwd, ssid, wifipwd):
+    def __init__(self, chromedriverpath, backupfilepath, ip, pwd):
         self.chromedriverpath
         self.backupfilepath
         self.ip
@@ -20,7 +20,7 @@ class Tplink:
     def exit(self):
         self.driver.quit()
 
-    def setPwd(slef, ip, pwd):
+    def setPwd(self, ip, pwd):
         self.driver.get(ip)
         print("page uploaded")
         sleep(3)
@@ -69,7 +69,7 @@ class Tplink:
                 upload_chek = 100
                 print("eror")
         time.sleep(10)
-    
+    """
     def steWifi(self, ssid, wifipwd):
         wireless = self.driver.find_element_by_xpath("//*[@id=\"menuTree\"]/li[3]/a/span[2]")
         wireless.click()
@@ -103,3 +103,4 @@ class Tplink:
         ssid_check = self.driver.find_element_by_xpath("//*[@id=\"ssid_2g\"]").get_attribute("value")
 
         return mac, ssid_check, wifipwd
+        """
