@@ -4,15 +4,12 @@ import string
 import os
 
 class Tplink:
-
     def __init__(self, chromedriverpath, backupfilepath, ip, pwd):
-        self.chromedriverpath
-        self.backupfilepath
-        self.ip
-        self.pwd
-        self.ssid
-        self.wifipwd
-    
+        self.chromedriverpath = None
+        self.backupfilepath = None
+        self.ip = None
+        self.pwd = None
+
     def setUp(self, chromedriverpath):
         self.driver = webdriver.Chrome(executable_path=chromedriverpath)
         self.driver.maximize_window()
