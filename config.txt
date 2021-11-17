@@ -1,0 +1,6 @@
+[config]
+chromedriverpath = path/to/chromedriver
+backupfilepath = path/to/backup/file
+adminip = new ip
+ip = default ip 
+pwd = password
