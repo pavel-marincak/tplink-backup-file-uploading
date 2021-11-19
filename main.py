@@ -17,7 +17,7 @@ buzzerPIN = 4
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(buzzerPIN,GPIO.OUT)
-buzz = GPIO.PWM(triggerPIN, 1000)
+buzz = GPIO.PWM(buzzerPIN, 1000)
 
 def buzzer(i):
     for i in range(0,i):
